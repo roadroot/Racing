@@ -1,6 +1,6 @@
 import math
 from operator import mod
-class Voiture:
+class car:
     def __init__(self):
         self.vitesse=0
         self.direction=0
