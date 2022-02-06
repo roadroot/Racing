@@ -25,7 +25,8 @@ while running:
     elif event.type == pygame.KEYDOWN:
       keys=pygame.key.get_pressed()
       if keys[pygame.K_UP]:
-        c.accelerate()
+        c.accelerate(1)
+        c.move()
     screen.fill(background_colour)
     renderCarAt(c.position[0], c.position[1])
     pygame.display.update()

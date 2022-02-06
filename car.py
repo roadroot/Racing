@@ -16,7 +16,4 @@ class car:
     def turnLeft(self,direction):
         self.direction+=(self.direction+direction) % math.pi
     def move(self):
-        self.position[0]+=math.cos(self.direction)*self.vitesse
-        self.position[1]+=math.sin(self.direction)*self.vitesse
-    
- 
+        self.position = (self.position[0]+math.cos(self.direction)*self.vitesse, self.position[1]+math.sin(self.direction)*self.vitesse)
